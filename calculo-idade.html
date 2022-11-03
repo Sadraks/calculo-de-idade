@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <script>
+        var anoDeNascimento = parseInt(prompt("Digite o ano de nascimento"))
+        while (anoDeNascimento >= 2022) {
+            alert("Cuidado! Data de nascimento invalida")
+            var anoDeNascimento = parseInt(prompt("Digite o ano de nascimento corretamente"))
+        }
+        var anoAtual = parseInt(prompt("Por favor Digite o ano atual"))
+        while (anoAtual < 2022) {
+            alert("Cuidado! Data atual esta incorreta")
+            var anoAtual = parseInt(prompt("Por favor Digite o ano atual"))
+        }
+        var idade = parseInt(anoAtual - anoDeNascimento)
+        alert("Sua idade é : " + idade)
+
+    </script>
+
+</body>
+
+</html>
